@@ -1,0 +1,30 @@
+# build files
+build
+coverage
+tsconfig.*tsbuildinfo
+
+# schema files
+/schema
+
+# dependencies
+node_modules
+npm-debug.log*
+lerna-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock.json
+!/yarn.lock
+
+# test fixtures
+!/test/fixture/yarn.lock
+
+# editors
+.idea
+
+# vscode
+.vscode-test/
+*.vsix
+
+# misc
+.DS_Store

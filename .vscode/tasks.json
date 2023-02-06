@@ -1,0 +1,55 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev",
+      "type": "npm",
+      "script": "dev",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never"
+      },
+      // Trick vscode into thinking the task is ready (it's a watch task)
+      // No idea what the nodemon patterns are ¯\_(ツ)_/¯
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": ".",
+          }
+        }
+      ]
+    },
+    {
+      "label": "build",
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never"
+      },
+      "dependsOn": "clean"
+    },
+    {
+      "label": "clean",
+      "type": "npm",
+      "script": "clean",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "reveal": "never"
+      }
+    }
+  ]
+}
