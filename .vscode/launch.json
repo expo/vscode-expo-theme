@@ -11,7 +11,7 @@
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
-        "${workspaceFolder}/../../bycedric/expo-monorepo-example",
+        "${workspaceFolder}/example",
         "--extensionDevelopmentPath=${workspaceFolder}",
         "--disable-extensions"
       ],
@@ -30,7 +30,7 @@
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
-        "${workspaceFolder}/../../bycedric/expo-monorepo-example",
+        "${workspaceFolder}/example",
         "--extensionDevelopmentPath=${workspaceFolder}",
         "--disable-extensions"
       ],
