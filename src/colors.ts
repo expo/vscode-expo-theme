@@ -5,7 +5,6 @@ const HSL_PATTERN = /^hsl\(([\d]+),\s+([\d.]+)%,\s+([\d.]+)%\)$/i;
 /** Convert a hsl noted color to the equivalent hex value */
 export function hslToHex(value: string) {
   const matches = value.match(HSL_PATTERN);
-
   if (!matches) {
     return null;
   }
