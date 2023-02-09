@@ -1,109 +1,103 @@
 import { palette } from '@expo/styleguide-native/dist/styles/palette';
+import { darkTheme } from '@expo/styleguide-native/dist/styles/themes';
 
 import { makeTheme } from '../blueprint';
 
-/* eslint-disable prettier/prettier */
 export default makeTheme({
   colors: {
-    'editor.background': palette.dark.gray2,
+    'activityBar.background': darkTheme.background.subtle,
+    'editor.background': darkTheme.background.default,
+    'editorGroupHeader.tabsBackground': darkTheme.background.subtle,
+    'sideBar.background': darkTheme.background.screen,
+    'tab.inactiveBackground': darkTheme.background.element,
   },
   tokenColors: {
-    // Color everything as gray10 by default
-    'source': palette.dark.gray10,
+    'comment.line': darkTheme.text.tertiary,
+    'comment.block': darkTheme.text.tertiary,
 
-    // prev javascript
-    'meta.var.expr': palette.dark.gray12,
-    'meta.var.expr meta.array.literal': palette.dark.gray10,
-    'meta.var.expr meta.brace': palette.dark.gray10,
-    'meta.import': palette.dark.gray12,
-    'storage.type': palette.dark.pink10,
-    'storage.type.function.arrow': palette.dark.gray10,
-    'keyword.operator.assignment': palette.dark.gray10,
-    'string': palette.dark.yellow11,
-    'string meta.template.expression': palette.dark.gray12,
-    'string punctuation.definition.template-expression': palette.dark.gray10,
-    'meta.function-call': palette.dark.purple11,
-    'meta.function-call variable.other.object': palette.dark.gray12,
-    'support.type.object.module': palette.dark.purple11,
-    'variable.parameter': palette.dark.gray12,
-    'keyword.control': palette.dark.pink10,
-    'keyword.operator': palette.dark.pink10,
-    'storage.modifier.async': palette.dark.pink10,
-    'constant.language.boolean': palette.dark.red11,
-    'meta.object.member': palette.dark.gray12,
-    'meta.object.member meta.array': palette.dark.gray10,
-    'meta.object.member meta.brace': palette.dark.gray10,
-    'meta.object.member punctuation.separator': palette.dark.gray10,
-    'punctuation.accessor': palette.dark.gray10,
-    'variable.other.object': palette.dark.gray12,
-    'variable.other.property': palette.dark.gray12,
+    'constant.numeric': darkTheme.text.warning,
+    'constant.language': palette.dark.pink10,
+    'constant.other.variable': palette.dark.green10,
+
+    'editorBracketMatch.border': darkTheme.text.quaternary,
+
+    'entity.name.tag': palette.dark.orange10,
     'entity.name.function': palette.dark.purple11,
+    'entity.name.type': palette.dark.green10,
+    'entity.other': palette.dark.blue11,
+    'entity.scope.name': palette.dark.blue10,
 
-    'source.ignore': {
+    'keyword.control': palette.dark.pink10,
+    'keyword.control.new': palette.dark.orange10,
+    'keyword.other': palette.dark.pink10,
+    'keyword.operator': palette.dark.red10,
+    'keyword.operator.assignment': darkTheme.text.quaternary,
+    'keyword.operator.new': palette.dark.orange10,
+    'keyword.operator.rest': darkTheme.text.quaternary,
+    'keyword.operator.spread': darkTheme.text.quaternary,
+    'keyword.operator.type.annotation': darkTheme.text.quaternary,
+    'keyword.operator.ternary': palette.dark.red10,
 
-    },
+    'meta.brace': darkTheme.text.quaternary,
+    'meta.definition.variable': darkTheme.text.default,
+    'meta.function-call': palette.dark.purple11,
+    'meta.import': darkTheme.text.default,
+    'meta.object-literal.key': darkTheme.text.secondary,
 
-    'source.java': {
+    'punctuation.accessor': darkTheme.text.quaternary,
+    'punctuation.bracket': darkTheme.text.quaternary,
+    'punctuation.definition': darkTheme.text.quaternary,
+    'punctuation.definition.annotation': darkTheme.text.warning,
+    'punctuation.definition.block': darkTheme.text.quaternary,
+    'punctuation.definition.parameters': darkTheme.text.quaternary,
+    'punctuation.definition.string': darkTheme.text.quaternary,
+    'punctuation.section': darkTheme.text.quaternary,
+    'punctuation.separator': darkTheme.text.quaternary,
+    'punctuation.separator.dot-access': darkTheme.text.quaternary,
+    'punctuation.terminator.statement': darkTheme.text.quaternary,
 
-    },
+    'storage.modifier': palette.dark.orange10,
+    'storage.modifier.import': darkTheme.text.secondary,
+    'storage.type': palette.dark.pink10,
+    'storage.type.annotation': darkTheme.text.warning,
+    'storage.type.generic': palette.dark.blue10,
+    'storage.type.function.arrow': darkTheme.text.quaternary,
 
-    'source.js': {
+    'string.quoted': darkTheme.text.warning,
+    'string.template': palette.dark.yellow11,
 
-    },
+    'support.type.primitive': palette.dark.orange10,
+    'support.type.builtin': palette.dark.pink10,
 
-    'source.json': {
-      'punctuation.separator': palette.dark.gray10,
-      'punctuation.definition': palette.dark.gray10,
-      'punctuation.support': palette.dark.gray10,
-      'meta.structure.dictionary': palette.dark.purple11,
-      'support.type.property-name': palette.dark.purple11,
-      'constant.language': palette.dark.yellow11,
-      'constant.numeric': palette.dark.yellow11,
-    },
+    'variable.object.property': darkTheme.text.secondary,
+    'variable.other': darkTheme.text.default,
+    'variable.other.constant': palette.dark.blue11,
+    'variable.other.macro.argument': palette.dark.pink10,
+    'variable.parameter.probably': palette.dark.blue11,
+    'variable.language': darkTheme.text.warning,
 
-    'source.kotlin': {
-      'keyword.other': palette.dark.pink10,
-      'entity.name.package': palette.dark.gray12,
-      'storage.modifier.import': palette.dark.gray12,
-      'storage.modifier': palette.dark.pink10,
-      'support.class': palette.dark.green10,
-      'entity.name.class': palette.dark.gray12,
-      'entity.other.inherited-class': palette.dark.green10,
-      'meta.block': palette.dark.gray12,
-      'entity.name.type.class': palette.dark.purple11,
-      'meta.class entity.name.type.class': palette.dark.green10,
-      'storage.type.annotation': palette.dark.red11,
-      'punctuation.section': palette.dark.gray10,
-      'keyword.operator': palette.dark.gray10,
-    },
+    // Language-specific overwrites
 
-    'source.objc': {
+    'source.ignore': {},
 
-    },
+    'source.java': {},
 
-    'source.ruby': {
+    'source.js,source.jsx': {},
 
-    },
+    'source.json': {},
 
-    'source.swift': {
+    'source.kotlin': {},
 
-    },
+    'source.objc': {},
 
-    // typescript
-    'support.type.primitive': palette.dark.green10,
-    'keyword.operator.type.annotation': palette.dark.gray10,
-    // Not sure if this works 🤷‍♀️
-    'source.tsx,source.ts': {
+    'source.ruby': {},
 
-    },
+    'source.swift': {},
 
+    'source.tsx,source.ts': {},
 
-    'text.xml': {
+    'text.xml': {},
 
-    },
-
-    'source.yaml': {
-
-    },
+    'source.yaml': {},
   },
 });
