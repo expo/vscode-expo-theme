@@ -1,9 +1,15 @@
 import { hslToHex } from './colors';
 import { Theme, TokenColor } from './types';
 
+type TokenColorValueBlueprint = string | Omit<TokenColor, 'scope'>;
+
+interface NestedTokenColorBlueprint {
+  [scope: string]: TokenColorValueBlueprint | NestedTokenColorBlueprint;
+}
+
 /** A simplified notation that supports auto-converting HSL colors to hex */
 export interface ThemeBlueprint extends Pick<Theme, 'colors'> {
-  tokenColors: Record<string, string | Omit<TokenColor, 'scope'>>;
+  tokenColors: NestedTokenColorBlueprint;
 }
 
 /** Convert a theme blueprint to a finalized text mate theme */
@@ -19,15 +25,36 @@ export function makeTheme(blueprint: ThemeBlueprint) {
   }
 
   for (const scope in blueprint.tokenColors) {
-    theme.tokenColors.push(makeTokenColor(scope, blueprint.tokenColors[scope]));
+    theme.tokenColors.push(...makeTokenColors(scope, blueprint.tokenColors[scope]));
   }
 
   return theme;
 }
 
 /** Convert a single token color to  */
-function makeTokenColor(scope: string, definition: ThemeBlueprint['tokenColors'][string]) {
-  return typeof definition !== 'string'
-    ? { ...definition, scope }
-    : { name: scope, scope, settings: { foreground: hslToHex(definition) ?? definition } };
+function makeTokenColors(
+  scope: string,
+  definition: NestedTokenColorBlueprint[string]
+): TokenColor[] {
+  if (typeof definition === 'string') {
+    return [{ name: scope, scope, settings: { foreground: hslToHex(definition) ?? definition } }];
+  }
+
+  if (isTokenColor(definition)) {
+    const { foreground } = definition.settings;
+    if (foreground) {
+      definition.settings.foreground = hslToHex(foreground) ?? foreground;
+    }
+
+    return [{ ...definition, scope }];
+  }
+
+  return Object.entries(definition)
+    .map(([subscope, subdefintion]) => makeTokenColors(`${scope} ${subscope}`, subdefintion))
+    .flat();
+}
+
+/** Check if a unioned nested token color definition, is actually a non-nested token definition */
+function isTokenColor(definition: NestedTokenColorBlueprint[string]): definition is TokenColor {
+  return typeof definition === 'object' && ('name' in definition || 'settings' in definition);
 }
