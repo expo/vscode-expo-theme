@@ -6,14 +6,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Start (dev)",
+      "name": "Theme (dev)",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
         "${workspaceFolder}/example",
-        "--extensionDevelopmentPath=${workspaceFolder}",
-        "--disable-extensions"
+        "--extensionDevelopmentPath=${workspaceFolder}"
       ],
       "env": {
         "VSCODE_EXPO_DEBUG": "vscode-expo*",
@@ -25,14 +24,13 @@
       "preLaunchTask": "dev"
     },
     {
-      "name": "Start (build)",
+      "name": "Theme (build)",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
         "${workspaceFolder}/example",
-        "--extensionDevelopmentPath=${workspaceFolder}",
-        "--disable-extensions"
+        "--extensionDevelopmentPath=${workspaceFolder}"
       ],
       "env": {
         "VSCODE_EXPO_DEBUG": "vscode-expo*",
@@ -42,6 +40,19 @@
         "${workspaceFolder}/build/**"
       ],
       "preLaunchTask": "build"
+    },
+    {
+      "name": "Script (build)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "run",
+        "build"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }
