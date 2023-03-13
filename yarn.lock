@@ -24,10 +24,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@expo/styleguide-native@^6.1.3":
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/@expo/styleguide-native/-/styleguide-native-6.1.3.tgz#b45fd5c14d8d27836e929fe80e3b0cdf0e3fe93d"
-  integrity sha512-//MLFYVJie/0a+HeMHYNbLkpdWgAMOVZ6Y6myxZzUWwWj4oiikmhhPJg3yEEMoIqDHv5OHedV0e6Xy5OZBGhRA==
+"@expo/styleguide-base@1.0.0-alpha.2":
+  version "1.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@expo/styleguide-base/-/styleguide-base-1.0.0-alpha.2.tgz#ff581558974706079def453cfbf245e5bc3bb291"
+  integrity sha512-7sEdwU5KtKMF5NnmYw6KwgCuV/6CI1+UtFyX9v3DK9a6lfcqQpChk0Ac1nQB1E4daSq+1pHKxM2BcDh1BWtstA==
   dependencies:
     "@radix-ui/colors" "^0.1.8"
 
