@@ -7,11 +7,7 @@
     "TODO"
   ],
   "license": "MIT",
-  "author": {
-    "email": "npm@cedric.dev",
-    "name": "Cedric van Putten",
-    "url": "https://cedric.dev"
-  },
+  "author": "expo",
   "homepage": "https://github.com/bycedric/vscode-expo-theme",
   "bugs": {
     "url": "https://github.com/bycedric/vscode-expo-theme/issues"
