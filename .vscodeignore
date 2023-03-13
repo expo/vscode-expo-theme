@@ -2,8 +2,7 @@
 **
 
 # only include these files
-!out/**
-!images/logo-marketplace.png
+!build/**
 !CHANGELOG.md
 !LICENSE.md
 !package.json
