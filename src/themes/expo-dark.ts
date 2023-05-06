@@ -1,4 +1,4 @@
-import { darkTheme, palette } from '@expo/styleguide-base';
+import { darkTheme, lightTheme, palette } from '@expo/styleguide-base';
 
 import { makeTheme } from '../blueprint';
 
@@ -6,8 +6,9 @@ export default makeTheme({
   colors: {
     'activityBar.background': darkTheme.background.screen,
     'activityBar.border': darkTheme.background.default,
-    'activityBarBadge.background': palette.dark.blue9,
+    'activityBar.foreground': darkTheme.text.secondary,
     'activityBar.activeBackground': darkTheme.background.subtle,
+    'activityBarBadge.background': palette.dark.blue9,
     'button.background': darkTheme.button.primary.background,
     'editor.background': darkTheme.background.default,
     'editor.border': darkTheme.background.default,
@@ -19,6 +20,8 @@ export default makeTheme({
     'editorBracketHighlight.foreground6': darkTheme.text.quaternary,
     'editorBracketHighlight.unexpectedBracket.foreground': darkTheme.text.quaternary,
     'editorGroupHeader.tabsBackground': darkTheme.background.screen,
+    'editorLineNumber.foreground': lightTheme.text.quaternary,
+    'editor.selectionBackground': lightTheme.background.hover,
     'list.activeSelectionBackground': darkTheme.background.element,
     'list.activeSelectionBorder': '#00000000',
     'list.focusOutline': '#00000000',
@@ -50,7 +53,7 @@ export default makeTheme({
 
     'editorBracketMatch.border': darkTheme.text.quaternary,
 
-    'entity.name.tag': palette.dark.orange10,
+    'entity.name.tag': palette.dark.orange9,
     'entity.name.type': palette.dark.green11,
     'entity.name.type.class': palette.dark.blue11,
     'entity.name.type.module': palette.dark.blue11,
@@ -60,7 +63,7 @@ export default makeTheme({
 
     'keyword.control': palette.dark.purple11,
     'keyword.control.flow': palette.dark.pink10,
-    'keyword.control.new': palette.dark.orange10,
+    'keyword.control.new': palette.dark.orange9,
     'keyword.other': palette.dark.pink10,
     'keyword.operator': darkTheme.text.tertiary,
     'keyword.operator.assignment': darkTheme.text.quaternary,
@@ -101,8 +104,8 @@ export default makeTheme({
     'string.quoted': palette.dark.yellow11,
     'string.template': palette.dark.yellow11,
 
-    'support.type.primitive': palette.dark.orange10,
-    'support.type.property-name': palette.dark.orange10,
+    'support.type.primitive': palette.dark.orange9,
+    'support.type.property-name': palette.dark.orange9,
     'support.type.builtin': palette.dark.pink10,
 
     'variable.object.property': darkTheme.text.default,
