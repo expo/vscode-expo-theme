@@ -2,12 +2,12 @@
   "name": "vscode-expo-theme",
   "displayName": "Expo Theme",
   "version": "0.0.0",
-  "description": "TODO",
+  "description": "Expo-inspired editor and syntax theme.",
   "keywords": [
-    "TODO"
+    "expo"
   ],
   "license": "MIT",
-  "author": "expo",
+  "author": "Expo",
   "homepage": "https://github.com/bycedric/vscode-expo-theme",
   "bugs": {
     "url": "https://github.com/bycedric/vscode-expo-theme/issues"
@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "nodemon --watch ./src --exec ts-node ./src/scripts/build-themes.ts",
     "build": "ts-node ./src/scripts/build-themes.ts",
+    "package": "vsce package",
     "clean": "git clean -xdf ./build",
     "lint": "eslint ."
   },
