@@ -4,8 +4,8 @@ import { makeTheme } from '../blueprint';
 
 export default makeTheme({
   colors: {
-    'activityBar.background': lightTheme.background.screen,
-    'activityBar.border': lightTheme.background.default,
+    'activityBar.background': lightTheme.background.subtle,
+    'activityBar.border': lightTheme.border.secondary,
     'activityBar.foreground': lightTheme.text.secondary,
     'activityBar.activeBackground': lightTheme.background.selected,
     'activityBarBadge.background': palette.light.blue9,
@@ -22,6 +22,7 @@ export default makeTheme({
     'editorGroup.border': lightTheme.border.secondary,
     'editorGroupHeader.border': lightTheme.background.element,
     'editorGroupHeader.tabsBackground': lightTheme.background.element,
+    'editorGutter.foldingControlForeground': lightTheme.icon.secondary,
     'editorLineNumber.foreground': lightTheme.text.quaternary,
     'editorWidget.background': lightTheme.background.default,
     'editor.selectionBackground': lightTheme.background.hover,
@@ -48,7 +49,7 @@ export default makeTheme({
     'pickerGroup.foreground': lightTheme.text.tertiary,
     'pickerGroup.border': lightTheme.border.secondary,
     'sideBar.background': lightTheme.background.screen,
-    'sideBar.border': lightTheme.background.default,
+    'sideBar.border': lightTheme.border.secondary,
     'sideBar.foreground': lightTheme.text.secondary,
     'sideBarSectionHeader.background': lightTheme.background.screen,
     'sideBarSectionHeader.border': lightTheme.background.default,
@@ -119,8 +120,8 @@ export default makeTheme({
     'storage.type.generic': palette.light.blue10,
     'storage.type.function.arrow': lightTheme.text.quaternary,
 
-    'string.quoted': palette.light.yellow11,
-    'string.template': palette.light.yellow11,
+    'string.quoted': '#C07F00',
+    'string.template': '#C07F00',
 
     'support.type.primitive': palette.light.orange10,
     'support.type.property-name': palette.light.orange10,
@@ -161,7 +162,7 @@ export default makeTheme({
     'text.html.markdown': {
       'fenced_code.block.language': palette.light.purple11,
       'markup.bold': palette.light.orange10,
-      'markup.inline.raw.string': palette.light.yellow11,
+      'markup.inline.raw.string': '#C07F00',
       'markup.underline.link': palette.light.blue11,
       'meta.paragraph': lightTheme.text.default,
       'punctuation.definition.heading.markdown': palette.light.red10,
