@@ -20,17 +20,14 @@ jobs:
       - name: 🏗 Setup repository
         uses: actions/checkout@v3
 
-      - name: 🏗 Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: yarn
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
 
       - name: 📦 Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: ✅ Lint packages
+      - name: ✅ Lint project
         run: yarn lint
 
-      - name: 👷 Build packages
+      - name: 👷 Build project
         run: yarn build

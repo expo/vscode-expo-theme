@@ -1,0 +1,51 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'type "release" to create the release (main branch only)'
+        required: false
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dryrun:
+    if: ${{ github.ref != 'refs/heads/main' || github.event.inputs.release != 'release' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: 📋 Dry-running release
+        run: yarn semantic-release --dry-run
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  create:
+    if: ${{ github.ref == 'refs/heads/main' && github.event.inputs.release == 'release' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.EXPOBOT_GITHUB_TOKEN }}
+
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: 📋 Release code
+        run: yarn semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.EXPOBOT_GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: Expo CI
+          GIT_AUTHOR_EMAIL: support+ci@expo.io
+          GIT_COMMITTER_NAME: Expo CI
+          GIT_COMMITTER_EMAIL: support+ci@expo.io
