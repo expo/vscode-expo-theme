@@ -1,0 +1,62 @@
+name: publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  github-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: 🎁 Package extension
+        run: yarn vsce package --yarn
+        env:
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
+
+      - name: 📋 Add package to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: vscode-expo-theme-*.vsix
+          tag_name: ${{ github.ref_name }}
+
+  vscode-marketplace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo from tag
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: 🚀 Publish to marketplace
+        run: yarn vsce publish --yarn
+        env:
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
+          VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+
+  open-vsx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo from tag
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: 🎁 Package extension
+        run: yarn vsce package --yarn --out ./vscode-expo-theme.vsix
+        env:
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
+
+      - name: 🚀 Publish to open-vsx
+        run: npx ovsx publish ./vscode-expo-theme.vsix
+        env:
+          OVSX_PAT: ${{ secrets.OPENVSX_TOKEN }}
