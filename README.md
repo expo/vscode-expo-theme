@@ -1,10 +1,7 @@
 <h1 align="center">
- <img width="96" alt="Expo Tools" src="./.github/resources/logo.webp" />
+<img width="96" alt="Expo Tools" src="./.github/resources/logo.webp" />
 
-  Expo VS Code themes
-</h1>
-
-<img alt="Expo VS Code themes" src="./.github/resources/splash.webp" />
+Expo VS Code themes
 
 <p align="center">
   <a aria-label="Latest release" href="https://github.com/expo/vscode-expo-theme/releases" target="_blank">
@@ -20,6 +17,9 @@
     <img alt="Install from Open VSX" src="https://img.shields.io/badge/vscode-open%20vsx-25292E?style=flat-square&label=%20&logoColor=BCC3CD&labelColor=49505A&logo=Eclipse%20IDE" />
   </a>
 </p>
+</h1>
+
+<img alt="Expo VS Code themes" src="./.github/resources/splash.webp" />
 
 ## Install
 
