@@ -1,5 +1,5 @@
 <h1 align="center">
-<img width="96" alt="Expo Tools" src="./.github/resources/logo.webp" />
+<img width="96" alt="Logo" src="./.github/resources/logo.png" />
 
 Expo VS Code themes
 
@@ -7,7 +7,7 @@ Expo VS Code themes
   <a aria-label="Latest release" href="https://github.com/expo/vscode-expo-theme/releases" target="_blank">
     <img alt="Latest release" src="https://img.shields.io/github/package-json/v/expo/vscode-expo-theme?style=flat-square&color=0366D6&labelColor=49505A" />
   </a>
-  <a aria-label="Workflow status"  href="https://github.com/expo/vscode-expo-theme/actions" target="_blank">
+  <a aria-label="Workflow status" href="https://github.com/expo/vscode-expo-theme/actions" target="_blank">
     <img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/expo/vscode-expo/test.yml?branch=main&style=flat-square&labelColor=49505A" />
   </a>
   <a aria-label="Install from VS Code Marketplace" href="https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-theme" target="_blank">
@@ -19,7 +19,7 @@ Expo VS Code themes
 </p>
 </h1>
 
-<img alt="Expo VS Code themes" src="./.github/resources/splash.webp" />
+<img alt="Expo VS Code themes" src="./.github/resources/splash.png" />
 
 ## Install
 
