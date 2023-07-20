@@ -2,6 +2,7 @@
 **
 
 # only include these files
+!.github/resources/**
 !build/**
 !CHANGELOG.md
 !LICENSE.md
