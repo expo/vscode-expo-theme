@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/expo/vscode-expo-theme/compare/1.0.0...1.0.1) (2023-07-20)
+
+
+### Bug fixes
+
+* missing vscode icon and readme images ([#4](https://github.com/expo/vscode-expo-theme/issues/4)) ([14da2ee](https://github.com/expo/vscode-expo-theme/commit/14da2eee141074b0633214755754872c27d15a5c))
+
 ## 1.0.0 (2023-07-20)
 
 
