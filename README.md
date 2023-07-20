@@ -1,5 +1,5 @@
 <h1 align="center">
-<img width="96" alt="Expo Tools" src="./.github/resources/logo.png" />
+<img width="96" alt="Logo" src="./.github/resources/logo.png" />
 
 Expo VS Code themes
 
