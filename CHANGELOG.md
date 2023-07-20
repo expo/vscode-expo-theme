@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/expo/vscode-expo-theme/compare/1.0.1...1.0.2) (2023-07-20)
+
+
+### Bug fixes
+
+* add missing vscode settings ([65841c4](https://github.com/expo/vscode-expo-theme/commit/65841c400aeefca12495b690c6e6131f2120b578))
+
 ## [1.0.1](https://github.com/expo/vscode-expo-theme/compare/1.0.0...1.0.1) (2023-07-20)
 
 
