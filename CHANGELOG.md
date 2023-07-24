@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/expo/vscode-expo-theme/compare/1.0.2...1.0.3) (2023-07-24)
+
+
+### Bug fixes
+
+* update path to logo in `package.json` for vsix ([#6](https://github.com/expo/vscode-expo-theme/issues/6)) ([baa89a4](https://github.com/expo/vscode-expo-theme/commit/baa89a4efc87d566eb1caaeec40b4b9bb08e7749))
+
 ## [1.0.2](https://github.com/expo/vscode-expo-theme/compare/1.0.1...1.0.2) (2023-07-20)
 
 
