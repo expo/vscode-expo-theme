@@ -67,7 +67,7 @@
     "vscode": "*"
   },
   "publisher": "expo",
-  "icon": ".github/resources/logo.webp",
+  "icon": ".github/resources/logo.png",
   "categories": [
     "Themes"
   ],
