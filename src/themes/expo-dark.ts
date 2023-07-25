@@ -104,6 +104,7 @@ export default makeTheme({
     'keyword.operator.spread': darkTheme.text.quaternary,
     'keyword.operator.type.annotation': darkTheme.text.quaternary,
     'keyword.operator.ternary': darkTheme.text.tertiary,
+    'keyword.operator.new': palette.dark.orange10,
 
     'meta.brace': darkTheme.text.quaternary,
     'meta.definition.variable': darkTheme.text.default,
