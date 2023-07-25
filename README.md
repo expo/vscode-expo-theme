@@ -8,7 +8,7 @@ Expo VS Code themes
     <img alt="Latest release" src="https://img.shields.io/github/package-json/v/expo/vscode-expo-theme?style=flat-square&color=0366D6&labelColor=49505A" />
   </a>
   <a aria-label="Workflow status" href="https://github.com/expo/vscode-expo-theme/actions" target="_blank">
-    <img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/expo/vscode-expo/test.yml?branch=main&style=flat-square&labelColor=49505A" />
+    <img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/expo/vscode-expo-theme/test.yml?branch=main&style=flat-square&labelColor=49505A" />
   </a>
   <a aria-label="Install from VS Code Marketplace" href="https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-theme" target="_blank">
     <img alt="Install from VS Code Marketplace" src="https://img.shields.io/badge/vscode-marketplace-25292E?style=flat-square&label=%20&logoColor=BCC3CD&labelColor=49505A&logo=Visual%20Studio%20Code" />
