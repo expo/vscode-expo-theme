@@ -110,6 +110,7 @@ export default makeTheme({
     'keyword.operator.spread': lightTheme.text.quaternary,
     'keyword.operator.type.annotation': lightTheme.text.quaternary,
     'keyword.operator.ternary': lightTheme.text.tertiary,
+    'keyword.operator.new': palette.dark.orange10,
 
     'meta.brace': lightTheme.text.quaternary,
     'meta.definition.variable': lightTheme.text.default,
