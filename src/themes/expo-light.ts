@@ -104,7 +104,7 @@ export default makeTheme({
     'keyword.other': palette.light.pink10,
     'keyword.operator': lightTheme.text.tertiary,
     'keyword.operator.assignment': lightTheme.text.quaternary,
-    'keyword.operator.expression.keyof': palette.light.pink10,
+    'keyword.operator.expression': palette.light.orange10,
     'keyword.operator.logical': lightTheme.text.tertiary,
     'keyword.operator.rest': lightTheme.text.quaternary,
     'keyword.operator.spread': lightTheme.text.quaternary,

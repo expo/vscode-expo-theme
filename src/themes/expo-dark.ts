@@ -84,7 +84,7 @@ export default makeTheme({
 
     'editorBracketMatch.border': darkTheme.text.quaternary,
 
-    'entity.name.tag': palette.dark.orange9,
+    'entity.name.tag': palette.dark.orange10,
     'entity.name.type': palette.dark.green11,
     'entity.name.type.class': palette.dark.blue11,
     'entity.name.type.module': palette.dark.blue11,
@@ -94,11 +94,11 @@ export default makeTheme({
 
     'keyword.control': palette.dark.purple11,
     'keyword.control.flow': palette.dark.pink10,
-    'keyword.control.new': palette.dark.orange9,
+    'keyword.control.new': palette.dark.orange10,
     'keyword.other': palette.dark.pink10,
     'keyword.operator': darkTheme.text.tertiary,
     'keyword.operator.assignment': darkTheme.text.quaternary,
-    'keyword.operator.expression.keyof': palette.dark.pink10,
+    'keyword.operator.expression': palette.dark.orange10,
     'keyword.operator.logical': darkTheme.text.tertiary,
     'keyword.operator.rest': darkTheme.text.quaternary,
     'keyword.operator.spread': darkTheme.text.quaternary,
@@ -134,8 +134,8 @@ export default makeTheme({
     'string.quoted': palette.dark.yellow11,
     'string.template': palette.dark.yellow11,
 
-    'support.type.primitive': palette.dark.orange9,
-    'support.type.property-name': palette.dark.orange9,
+    'support.type.primitive': palette.dark.orange10,
+    'support.type.property-name': palette.dark.orange10,
     'support.type.builtin': palette.dark.pink10,
 
     'variable.object.property': darkTheme.text.default,
