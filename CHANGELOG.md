@@ -1,3 +1,17 @@
+## [1.0.4](https://github.com/expo/vscode-expo-theme/compare/1.0.3...1.0.4) (2023-07-25)
+
+
+### Bug fixes
+
+* style `new` keywords with bright orange ([#8](https://github.com/expo/vscode-expo-theme/issues/8)) ([b8c1037](https://github.com/expo/vscode-expo-theme/commit/b8c10377c4a500dfb800614429884f354a363891))
+* use proper colors for keyword expressions ([#9](https://github.com/expo/vscode-expo-theme/issues/9)) ([2400afd](https://github.com/expo/vscode-expo-theme/commit/2400afdee394a1d3faa0997faf8cf7c546e6e902))
+
+
+### Other chores
+
+* automatically update version when releasing ([6ec1621](https://github.com/expo/vscode-expo-theme/commit/6ec162195ca8d74e979b4389956c51c988a3cb3d))
+* update release dry-run workflow permissions ([#7](https://github.com/expo/vscode-expo-theme/issues/7)) ([a6ac435](https://github.com/expo/vscode-expo-theme/commit/a6ac43562da5b934d6865cb0a2000931f32f7ff8))
+
 ## [1.0.3](https://github.com/expo/vscode-expo-theme/compare/1.0.2...1.0.3) (2023-07-24)
 
 
