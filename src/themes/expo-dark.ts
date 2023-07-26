@@ -181,6 +181,19 @@ export default makeTheme({
       'string.other.link.title': palette.dark.green11,
     },
 
+    'source.mdx': {
+      'meta.paragraph': darkTheme.text.default,
+      'punctuation.definition.heading': palette.dark.blue10,
+      'string.other.begin.code.fenced': darkTheme.text.tertiary,
+      'string.other.end.code.fenced': darkTheme.text.tertiary,
+      'variable.ordered.list': darkTheme.text.tertiary,
+      'variable.unordered.list': darkTheme.text.tertiary,
+      'markup.code': palette.dark.purple11,
+      'string.other.number': darkTheme.text.tertiary,
+      'meta.separator': darkTheme.text.tertiary,
+      'support.class.component': palette.dark.orange10,
+    },
+
     'source.objc': {
       'entity.name.function': palette.dark.blue11,
       'entity.name.function.preprocessor': palette.dark.orange11,
