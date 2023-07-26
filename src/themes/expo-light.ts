@@ -195,6 +195,19 @@ export default makeTheme({
       'meta.separator': lightTheme.text.tertiary,
     },
 
+    'source.mdx': {
+      'meta.paragraph': lightTheme.text.default,
+      'punctuation.definition.heading': palette.light.blue10,
+      'string.other.begin.code.fenced': lightTheme.text.tertiary,
+      'string.other.end.code.fenced': lightTheme.text.tertiary,
+      'variable.ordered.list': lightTheme.text.tertiary,
+      'variable.unordered.list': lightTheme.text.tertiary,
+      'markup.code': palette.light.purple11,
+      'string.other.number': lightTheme.text.tertiary,
+      'meta.separator': lightTheme.text.tertiary,
+      'support.class.component': palette.light.orange10,
+    },
+
     'source.objc': {
       'entity.name.function': palette.light.blue11,
       'entity.name.function.preprocessor': palette.light.orange10,
