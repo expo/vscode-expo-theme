@@ -6,12 +6,30 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Theme (dev)",
+      "name": "Example App (dev)",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
         "${workspaceFolder}/example",
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "env": {
+        "VSCODE_EXPO_DEBUG": "vscode-expo*",
+        "VSCODE_EXPO_TELEMETRY_KEY": null,
+      },
+      "outFiles": [
+        "${workspaceFolder}/build/**"
+      ],
+      "preLaunchTask": "dev"
+    },
+    {
+      "name": "Example Languages (dev)",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "${workspaceFolder}/example-languages",
         "--extensionDevelopmentPath=${workspaceFolder}"
       ],
       "env": {

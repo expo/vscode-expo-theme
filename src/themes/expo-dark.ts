@@ -151,12 +151,15 @@ export default makeTheme({
     'source.ignore': {},
 
     'source.java': {
+      'entity.name.function': palette.dark.blue11,
       'keyword.control.new': palette.dark.red10,
       'storage.modifier': palette.dark.orange11,
       'storage.modifier.extends': palette.dark.pink10,
       'storage.modifier.implements': palette.dark.pink10,
       'storage.type': palette.dark.green11,
       'storage.type.primitive': palette.dark.pink10,
+      'storage.type.generic': palette.dark.green11,
+      'punctuation.terminator': darkTheme.text.tertiary,
     },
 
     'source.js': {},
@@ -168,17 +171,35 @@ export default makeTheme({
     'source.kotlin': {
       'keyword.control.new': palette.dark.red10,
       'storage.modifier': palette.dark.orange11,
-      'storage.type': palette.dark.green11,
+      'variable.parameter.function': palette.dark.yellow11,
+      'entity.other.inherited-class': palette.dark.purple11,
+      'punctuation.seperator': darkTheme.text.tertiary,
     },
 
     'text.html.markdown': {
       'fenced_code.block.language': palette.dark.purple11,
-      'markup.bold': palette.dark.orange11,
+      'markup.bold': palette.dark.pink10,
+      'markup.italic': palette.dark.green11,
+      'markup.strikethrough': palette.dark.red10,
       'markup.inline.raw.string': palette.dark.yellow11,
       'markup.underline.link': palette.dark.blue11,
       'meta.paragraph': darkTheme.text.default,
-      'punctuation.definition.heading.markdown': palette.dark.red10,
+      'punctuation.definition.heading': palette.dark.blue10,
       'string.other.link.title': palette.dark.green11,
+      'meta.separator': darkTheme.text.tertiary,
+    },
+
+    'source.mdx': {
+      'meta.paragraph': darkTheme.text.default,
+      'punctuation.definition.heading': palette.dark.blue10,
+      'string.other.begin.code.fenced': darkTheme.text.tertiary,
+      'string.other.end.code.fenced': darkTheme.text.tertiary,
+      'variable.ordered.list': darkTheme.text.tertiary,
+      'variable.unordered.list': darkTheme.text.tertiary,
+      'markup.code': palette.dark.purple11,
+      'string.other.number': darkTheme.text.tertiary,
+      'meta.separator': darkTheme.text.tertiary,
+      'support.class.component': palette.dark.orange10,
     },
 
     'source.objc': {
@@ -206,15 +227,21 @@ export default makeTheme({
 
     'source.swift': {
       'entity.name.type': palette.dark.blue11,
+      'support.function.any-method': palette.dark.blue11,
       'keyword.control.new': palette.dark.red10,
       'meta.parameter-clause': palette.dark.green11,
-      'meta.function-call': palette.dark.blue11,
+      'meta.function-call': darkTheme.text.default,
+      'entity.name.function': palette.dark.blue11,
       'meta.definition.function.body': darkTheme.text.default,
       'meta.definition.type.body': darkTheme.text.default,
       'meta.inheritance-clause': palette.dark.orange11,
       'punctuation.definition.attribute': palette.dark.orange11,
       'storage.modifier': palette.dark.orange11,
       'support.type': palette.dark.green11,
+      'support.function': palette.dark.purple11,
+      'variable.parameter.function': palette.dark.yellow11,
+      'meta.function-result': palette.dark.green11,
+      'variable.language.generic-parameter': palette.dark.green11,
     },
 
     'source.ts': {
