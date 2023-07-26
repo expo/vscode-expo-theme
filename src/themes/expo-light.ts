@@ -157,12 +157,15 @@ export default makeTheme({
     'source.ignore': {},
 
     'source.java': {
+      'entity.name.function': palette.dark.blue11,
       'keyword.control.new': palette.light.red10,
       'storage.modifier': palette.light.orange10,
       'storage.modifier.extends': palette.light.pink10,
       'storage.modifier.implements': palette.light.pink10,
       'storage.type': palette.light.green11,
       'storage.type.primitive': palette.light.pink10,
+      'storage.type.generic': palette.light.green11,
+      'punctuation.terminator': lightTheme.text.tertiary,
     },
 
     'source.js': {},
@@ -174,17 +177,22 @@ export default makeTheme({
     'source.kotlin': {
       'keyword.control.new': palette.light.red10,
       'storage.modifier': palette.light.orange10,
-      'storage.type': palette.light.green11,
+      'variable.parameter.function': palette.light.yellow11,
+      'entity.other.inherited-class': palette.light.purple11,
+      'punctuation.seperator': lightTheme.text.tertiary,
     },
 
     'text.html.markdown': {
       'fenced_code.block.language': palette.light.purple11,
-      'markup.bold': palette.light.orange10,
-      'markup.inline.raw.string': '#C07F00',
+      'markup.bold': palette.light.pink10,
+      'markup.italic': palette.light.green11,
+      'markup.strikethrough': palette.light.red10,
+      'markup.inline.raw.string': palette.light.yellow11,
       'markup.underline.link': palette.light.blue11,
       'meta.paragraph': lightTheme.text.default,
-      'punctuation.definition.heading.markdown': palette.light.red10,
+      'punctuation.definition.heading.markdown': palette.light.blue10,
       'string.other.link.title': palette.light.green11,
+      'meta.separator': lightTheme.text.tertiary,
     },
 
     'source.objc': {
@@ -212,15 +220,19 @@ export default makeTheme({
 
     'source.swift': {
       'entity.name.type': palette.light.blue11,
+      'support.function.any-method': palette.light.blue11,
       'keyword.control.new': palette.light.red10,
       'meta.parameter-clause': palette.light.green11,
-      'meta.function-call': palette.light.blue11,
+      'meta.function-call': lightTheme.text.default,
+      'entity.name.function': palette.light.blue11,
       'meta.definition.function.body': lightTheme.text.default,
       'meta.definition.type.body': lightTheme.text.default,
       'meta.inheritance-clause': palette.light.orange10,
       'punctuation.definition.attribute': palette.light.orange10,
       'storage.modifier': palette.light.orange10,
       'support.type': palette.light.green11,
+      'support.function': palette.light.purple11,
+      'variable.parameter.function': palette.light.yellow11,
     },
 
     'source.ts': {
