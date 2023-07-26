@@ -27,7 +27,6 @@ func collectCustomerProviders(_ customerProvider: @autoclosure @escaping () -> S
     customerProviders.append(customerProvider)
 }
 collectCustomerProviders(customersInLine.remove(at: 0))
-collectCustomerProviders(customersInLine.remove(at: 0))
 
 enum OnOffSwitch: Togglable {
     case off, on

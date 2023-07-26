@@ -1,4 +1,4 @@
-import { darkTheme, lightTheme, palette } from '@expo/styleguide-base';
+import { lightTheme, palette } from '@expo/styleguide-base';
 
 import { makeTheme } from '../blueprint';
 
