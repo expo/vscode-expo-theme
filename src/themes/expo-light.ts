@@ -263,5 +263,13 @@ export default makeTheme({
     },
 
     'source.yaml': {},
+
+    'source.dart': {
+      'support.class.dart': palette.light.orange10,
+      'entity.name.function': palette.light.blue11,
+      'string.interpolated': '#C07F00',
+      'string.quoted': '#C07F00',
+      'string.template': '#C07F00',
+    },
   },
 });
