@@ -265,11 +265,15 @@ export default makeTheme({
     'source.yaml': {},
 
     'source.dart': {
-      'support.class.dart': palette.dark.orange10,
       'entity.name.function': palette.dark.blue11,
+      'keyword.declaration': palette.dark.pink10,
+      punctuation: darkTheme.text.tertiary,
+      'other.source': darkTheme.text.tertiary,
       'string.interpolated': palette.dark.yellow11,
       'string.quoted': palette.dark.yellow11,
       'string.template': palette.dark.yellow11,
+      'support.class': palette.dark.orange10,
+      'variable.parameter': palette.dark.red10,
     },
   },
 });
