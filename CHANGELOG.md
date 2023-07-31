@@ -1,3 +1,29 @@
+## [1.1.0](https://github.com/expo/vscode-expo-theme/compare/1.0.4...1.1.0) (2023-07-31)
+
+
+### New features
+
+* improve Dart files syntax highlight ([cf0889d](https://github.com/expo/vscode-expo-theme/commit/cf0889d9f3d13479b7e88efb475387a8a8206542))
+* improve MDX files syntax highlight ([#14](https://github.com/expo/vscode-expo-theme/issues/14)) ([cc77d19](https://github.com/expo/vscode-expo-theme/commit/cc77d1979b492d6632a7b64e61b98410c3f01d59))
+
+
+### Bug fixes
+
+* improve context menus appearance ([#15](https://github.com/expo/vscode-expo-theme/issues/15)) ([0dacc44](https://github.com/expo/vscode-expo-theme/commit/0dacc447f76937c439f1637dd6f5f0b685bd458d))
+* tweaks for Dart files syntax highlight ([#18](https://github.com/expo/vscode-expo-theme/issues/18)) ([8440f5f](https://github.com/expo/vscode-expo-theme/commit/8440f5f05f7bbb2242970727f57394621c06ddbd))
+* tweaks for Java, Kotlin, Markdown and Swift syntax highlight ([#12](https://github.com/expo/vscode-expo-theme/issues/12)) ([bdbd252](https://github.com/expo/vscode-expo-theme/commit/bdbd252db96427adef10d1ac3b3aad03fa5ff298))
+
+
+### Other chores
+
+* add languages example files and dev script ([#13](https://github.com/expo/vscode-expo-theme/issues/13)) ([b7afb5d](https://github.com/expo/vscode-expo-theme/commit/b7afb5d2d546581a356ea1d3899f3577b871f8c3))
+* bump styleguide package, deduplicate lock ([#16](https://github.com/expo/vscode-expo-theme/issues/16)) ([be1309a](https://github.com/expo/vscode-expo-theme/commit/be1309a9d2585992facd7f1ecf1f21dd20f369e5))
+
+
+### Documentation changes
+
+* update workflow badge to `vscode-expo-theme` ([#10](https://github.com/expo/vscode-expo-theme/issues/10)) ([0dc637c](https://github.com/expo/vscode-expo-theme/commit/0dc637c8f77e14acfd9deb933273a47548ea5a27))
+
 ## [1.0.4](https://github.com/expo/vscode-expo-theme/compare/1.0.3...1.0.4) (2023-07-25)
 
 

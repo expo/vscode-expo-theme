@@ -1,7 +1,7 @@
 {
   "name": "vscode-expo-theme",
   "displayName": "Expo Theme",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Expo-inspired editor and syntax theme.",
   "keywords": [
     "expo"
