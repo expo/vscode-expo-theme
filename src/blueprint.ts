@@ -41,10 +41,11 @@ function makeTokenColors(
   }
 
   if (isTokenColor(definition)) {
-    const { foreground } = definition.settings;
-    if (foreground) {
-      definition.settings.foreground = hslToHex(foreground) ?? foreground;
-    }
+    const { foreground, background } = definition.settings;
+
+    if (!definition.name) definition.name = scope;
+    if (foreground) definition.settings.foreground = hslToHex(foreground) ?? foreground;
+    if (background) definition.settings.background = hslToHex(background) ?? background;
 
     return [{ ...definition, scope }];
   }
