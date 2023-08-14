@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/expo/vscode-expo-theme/compare/1.1.0...1.2.0) (2023-08-14)
+
+
+### New features
+
+* add theme colors for diff and patch files ([#21](https://github.com/expo/vscode-expo-theme/issues/21)) ([62a7d90](https://github.com/expo/vscode-expo-theme/commit/62a7d90d4c7cb08278486723c36c14da865a93ba))
+
 ## [1.1.0](https://github.com/expo/vscode-expo-theme/compare/1.0.4...1.1.0) (2023-07-31)
 
 
