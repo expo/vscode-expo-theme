@@ -1,0 +1,72 @@
+diff --git a/build/autolinking/findModules.js b/build/autolinking/findModules.js
+index 8468bb879a9200b125c87e1c49f4f5cb87950824..d8db696c22e489c73ea9f2d4265dcb9318fa9acb 100644
+--- a/build/autolinking/findModules.js
++++ b/build/autolinking/findModules.js
+@@ -109,7 +109,16 @@ function addRevisionToResults(results, name, revision) {
+  */
+ async function findPackagesConfigPathsAsync(searchPath) {
+     const bracedFilenames = '{' + EXPO_MODULE_CONFIG_FILENAMES.join(',') + '}';
+-    const paths = await (0, fast_glob_1.default)([`*/${bracedFilenames}`, `@*/*/${bracedFilenames}`, `./${bracedFilenames}`], {
++    const paths = await (0, fast_glob_1.default)([
++        `*/${bracedFilenames}`,
++        `@*/*/${bracedFilenames}`,
++        `./${bracedFilenames}`,
++        // This is a hacky workaround to force autolinking to search for all available install locations.
++        // Check the structure of `node_modules` for more info, it only contains the direct dependencies of the project.
++        // Everything is installed in `node_modules/.pnpm/**`, so that's where we should look for pnpm.
++        `.pnpm/*/node_modules/*/${bracedFilenames}`,
++        `.pnpm/*/node_modules/@*/*/${bracedFilenames}`,
++    ], {
+         cwd: searchPath,
+     });
+     // If the package has multiple configs (e.g. `unimodule.json` and `expo-module.config.json` during the transition time)
+diff --git a/scripts/ios/autolinking_manager.rb b/scripts/ios/autolinking_manager.rb
+index d570ad23fd614b9bdc1ec1e50a0cd33843003ce6..0320df5ceee5405198330372bf5092854f95db28 100644
+--- a/scripts/ios/autolinking_manager.rb
++++ b/scripts/ios/autolinking_manager.rb
+@@ -178,7 +178,8 @@ module Expo
+         'node',
+         '--no-warnings',
+         '--eval',
+-        'require(\'expo-modules-autolinking\')(process.argv.slice(1))',
++        # The working directory will stil be set at `<projectRoot>/ios`, so we need to provide the location of this file when resolving the paths
++        'require(require.resolve(\'expo-modules-autolinking\', { paths: [\'' + __dir__ + '\'] }))(process.argv.slice(1))',
+         command_name,
+         '--platform',
+         'ios'
+diff --git a/scripts/ios/react_import_patcher.rb b/scripts/ios/react_import_patcher.rb
+index 4acf193bf1613b9135c21fd73ea0fbb8aac00f95..a477d373e3f7c82cfc7498d3fbf2211d98fbf9fa 100644
+--- a/scripts/ios/react_import_patcher.rb
++++ b/scripts/ios/react_import_patcher.rb
+@@ -14,7 +14,8 @@ module Expo
+         'node',
+         '--no-warnings',
+         '--eval',
+-        'require(\'expo-modules-autolinking\')(process.argv.slice(1))',
++        # The working directory will stil be set at `<projectRoot>/ios`, so we need to provide the location of this file when resolving the paths
++        'require(require.resolve(\'expo-modules-autolinking\', { paths: [\'' + __dir__ + '\'] }))(process.argv.slice(1))',
+         'patch-react-imports',
+         '--pods-root',
+         File.expand_path(@root),
+diff --git a/src/autolinking/findModules.ts b/src/autolinking/findModules.ts
+index 7b86a145892792529f765cdb94b74beaa757402b..fb036f7168f5d2248274feed4ec9cdc29928dd4a 100644
+--- a/src/autolinking/findModules.ts
++++ b/src/autolinking/findModules.ts
+@@ -132,7 +132,16 @@ function addRevisionToResults(
+ async function findPackagesConfigPathsAsync(searchPath: string): Promise<string[]> {
+   const bracedFilenames = '{' + EXPO_MODULE_CONFIG_FILENAMES.join(',') + '}';
+   const paths = await glob(
+-    [`*/${bracedFilenames}`, `@*/*/${bracedFilenames}`, `./${bracedFilenames}`],
++    [
++      `*/${bracedFilenames}`,
++      `@*/*/${bracedFilenames}`,
++      `./${bracedFilenames}`,
++      // This is a hacky workaround to force autolinking to search for all available install locations.
++      // Check the structure of `node_modules` for more info, it only contains the direct dependencies of the project.
++      // Everything is installed in `node_modules/.pnpm/**`, so that's where we should look for pnpm.
++      `.pnpm/*/node_modules/*/${bracedFilenames}`,
++      `.pnpm/*/node_modules/@*/*/${bracedFilenames}`,
++    ],
+     {
+       cwd: searchPath,
+     }
