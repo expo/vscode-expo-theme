@@ -278,5 +278,21 @@ export default makeTheme({
       'support.class.dart': palette.light.orange10,
       'variable.parameter': palette.light.red10,
     },
+
+    'source.diff': {
+      'meta.diff.header': palette.light.blue11,
+      'meta.diff.header.from-file': palette.light.red10,
+      'meta.diff.header.from-file punctuation.definition': palette.light.red8,
+      'meta.diff.header.to-file': palette.light.green10,
+      'meta.diff.header.to-file punctuation.definition': palette.light.green8,
+      'meta.diff.range': palette.light.purple11,
+
+      'markup.inserted.diff': palette.light.green10,
+      'markup.deleted.diff': palette.light.red10,
+
+      'punctuation.definition.inserted.diff': palette.light.green8,
+      'punctuation.definition.deleted.diff': palette.light.red8,
+      'punctuation.definition.range.diff': palette.light.purple8,
+    },
   },
 });
