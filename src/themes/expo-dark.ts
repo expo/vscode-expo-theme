@@ -275,5 +275,21 @@ export default makeTheme({
       'support.class': palette.dark.orange10,
       'variable.parameter': palette.dark.red10,
     },
+
+    'source.diff': {
+      'meta.diff.header': palette.dark.blue11,
+      'meta.diff.header.from-file': palette.dark.red11,
+      'meta.diff.header.from-file punctuation.definition': palette.dark.red8,
+      'meta.diff.header.to-file': palette.dark.green11,
+      'meta.diff.header.to-file punctuation.definition': palette.dark.green8,
+      'meta.diff.range': palette.dark.purple11,
+
+      'markup.inserted.diff': palette.dark.green11,
+      'markup.deleted.diff': palette.dark.red11,
+
+      'punctuation.definition.inserted.diff': palette.dark.green8,
+      'punctuation.definition.deleted.diff': palette.dark.red8,
+      'punctuation.definition.range.diff': palette.dark.purple8,
+    },
   },
 });
