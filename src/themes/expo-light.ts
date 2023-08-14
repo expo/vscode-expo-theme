@@ -281,14 +281,24 @@ export default makeTheme({
 
     'source.diff': {
       'meta.diff.header': palette.light.blue11,
-      'meta.diff.header.from-file': palette.light.red10,
+      'meta.diff.header.from-file': {
+        settings: {
+          background: palette.light.red2,
+          foreground: palette.light.red11,
+        },
+      },
       'meta.diff.header.from-file punctuation.definition': palette.light.red8,
-      'meta.diff.header.to-file': palette.light.green10,
+      'meta.diff.header.to-file': {
+        settings: {
+          background: palette.light.green2,
+          foreground: palette.light.green11,
+        },
+      },
       'meta.diff.header.to-file punctuation.definition': palette.light.green8,
       'meta.diff.range': palette.light.purple11,
 
-      'markup.inserted.diff': palette.light.green10,
-      'markup.deleted.diff': palette.light.red10,
+      'markup.inserted.diff': palette.light.green11,
+      'markup.deleted.diff': palette.light.red11,
 
       'punctuation.definition.inserted.diff': palette.light.green8,
       'punctuation.definition.deleted.diff': palette.light.red8,
