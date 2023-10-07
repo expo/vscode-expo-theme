@@ -81,7 +81,7 @@ export default makeTheme({
     'titleBar.activeBackground': lightTheme.background.element,
     'titleBar.inactiveBackground': lightTheme.background.element,
     'titleBar.border': lightTheme.border.secondary,
-    'tree.indentGuidesStroke': '#00000000',
+    'tree.indentGuidesStroke': lightTheme.border.secondary,
   },
   tokenColors: {
     'comment.line': lightTheme.text.tertiary,
