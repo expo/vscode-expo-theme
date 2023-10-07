@@ -267,6 +267,17 @@ export default makeTheme({
 
     'source.yaml': {},
 
+    'source.gdscript': {
+      'constant.language': palette.light.orange11,
+      'entity.name.function': palette.light.blue11,
+      'entity.name.type.class': palette.light.red10,
+      'entity.other.inherited-class': palette.light.red10,
+      'keyword.language': palette.light.pink10,
+      'keyword.control': palette.light.pink10,
+      'support.function': palette.light.blue11,
+      'variable.parameter.function': palette.light.green11,
+    },
+
     'source.dart': {
       'entity.name.function': palette.light.blue11,
       'keyword.declaration': palette.light.pink10,
