@@ -276,6 +276,13 @@ export default makeTheme({
       'variable.parameter': palette.dark.red10,
     },
 
+    'source.cs': {
+      'keyword.type': palette.dark.orange10,
+      'keyword.type.void': palette.dark.pink10,
+      'entity.name.function': palette.dark.blue11,
+      'variable.other.object.property': palette.dark.purple11,
+    },
+
     'source.diff': {
       'meta.diff.header': palette.dark.blue11,
       'meta.diff.header.from-file': {
