@@ -32,8 +32,8 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@tsconfig/node16": "^16.1.1",
-    "@types/node": "^16.18.58",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^18.18.4",
     "@types/vscode": "^1.83.0",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
@@ -45,12 +45,15 @@
     "nodemon": "^3.0.1",
     "ovsx": "^0.8.3",
     "prettier": "^3.0.3",
-    "semantic-release": "^19.0.5",
+    "semantic-release": "^22.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "eslintConfig": {
     "extends": "universe/node",
+    "env": {
+      "node": true
+    },
     "ignorePatterns": [
       "node_modules/**",
       "build/**"
