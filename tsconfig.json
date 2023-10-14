@@ -1,7 +1,10 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
-	"exclude": ["node_modules", ".vscode-test"],
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "exclude": [
+    "node_modules",
+    ".vscode-test"
+  ],
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "build"
   }
 }
