@@ -1,3 +1,23 @@
+## [1.3.0](https://github.com/expo/vscode-expo-theme/compare/1.2.0...1.3.0) (2023-11-07)
+
+
+### New features
+
+* improve C# files syntax highlight ([#25](https://github.com/expo/vscode-expo-theme/issues/25)) ([61a6aaa](https://github.com/expo/vscode-expo-theme/commit/61a6aaa4f455a34a7b1dce9dd08f2ec04919eb28))
+* improve GDScript files syntax highlight ([#26](https://github.com/expo/vscode-expo-theme/issues/26)) ([6461b84](https://github.com/expo/vscode-expo-theme/commit/6461b84f470c469e8f3094083aa342ef168a40f4))
+
+
+### Bug fixes
+
+* alter indent guides color ([#23](https://github.com/expo/vscode-expo-theme/issues/23)) ([d76c6a6](https://github.com/expo/vscode-expo-theme/commit/d76c6a6bae65fc914ea7737ec377e2ca3eaf4e05))
+* improve the Settings inputs style ([#28](https://github.com/expo/vscode-expo-theme/issues/28)) ([6946164](https://github.com/expo/vscode-expo-theme/commit/69461645eb688e1d453bc6a08424240de5782910))
+* tweak input selection background shade ([#27](https://github.com/expo/vscode-expo-theme/issues/27)) ([dd571d7](https://github.com/expo/vscode-expo-theme/commit/dd571d716935679bd59cc5af5650a4a8dcbe2220))
+
+
+### Other chores
+
+* bump dev dependencies ([#24](https://github.com/expo/vscode-expo-theme/issues/24)) ([a6d7d5b](https://github.com/expo/vscode-expo-theme/commit/a6d7d5ba56a87fb452f582d1098419e856e298bd))
+
 ## [1.2.0](https://github.com/expo/vscode-expo-theme/compare/1.1.0...1.2.0) (2023-08-14)
 
 
