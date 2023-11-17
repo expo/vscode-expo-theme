@@ -19,7 +19,7 @@ jobs:
       - name: 🎁 Package extension
         run: yarn vsce package --yarn
         env:
-          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.VSCODE_TELEMETRY_KEY }}
 
       - name: 📋 Add package to release
         uses: softprops/action-gh-release@v1
@@ -39,8 +39,8 @@ jobs:
       - name: 🚀 Publish to marketplace
         run: yarn vsce publish --yarn
         env:
-          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
-          VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.VSCODE_TELEMETRY_KEY }}
+          VSCE_PAT: ${{ secrets.VSCODE_MARKETPLACE_TOKEN }}
 
   open-vsx:
     runs-on: ubuntu-latest
@@ -54,9 +54,9 @@ jobs:
       - name: 🎁 Package extension
         run: yarn vsce package --yarn --out ./vscode-expo-theme.vsix
         env:
-          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.TELEMETRY_KEY }}
+          VSCODE_EXPO_TELEMETRY_KEY: ${{ secrets.VSCODE_TELEMETRY_KEY }}
 
       - name: 🚀 Publish to open-vsx
         run: npx ovsx publish ./vscode-expo-theme.vsix
         env:
-          OVSX_PAT: ${{ secrets.OPENVSX_TOKEN }}
+          OVSX_PAT: ${{ secrets.VSCODE_OPENVSX_TOKEN }}
