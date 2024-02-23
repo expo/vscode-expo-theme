@@ -127,6 +127,8 @@ export default makeTheme({
     'meta.brace': lightTheme.text.quaternary,
     'meta.definition.variable': lightTheme.text.default,
     'meta.definition.function': palette.light.blue11,
+    'meta.definition.method': palette.light.blue11,
+    'meta.definition.property': palette.light.blue11,
     'meta.function-call': palette.light.purple11,
     'meta.import': lightTheme.text.default,
     'meta.object-literal.key': lightTheme.text.default,

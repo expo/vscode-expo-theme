@@ -121,6 +121,8 @@ export default makeTheme({
     'meta.brace': darkTheme.text.quaternary,
     'meta.definition.variable': darkTheme.text.default,
     'meta.definition.function': palette.dark.blue11,
+    'meta.definition.method': palette.dark.blue11,
+    'meta.definition.property': palette.dark.blue11,
     'meta.function-call': palette.dark.purple11,
     'meta.import': darkTheme.text.default,
     'meta.object-literal.key': darkTheme.text.default,
