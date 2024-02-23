@@ -265,7 +265,6 @@ export default makeTheme({
     'source.ts': {
       'punctuation.definition.block.tag.jsdoc': palette.light.orange10,
       'storage.type.class.jsdoc': palette.light.orange10,
-      'meta.definition.property': palette.light.blue11,
     },
 
     'source.tsx': {
