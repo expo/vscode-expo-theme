@@ -1,3 +1,16 @@
+## [1.3.1](https://github.com/expo/vscode-expo-theme/compare/1.3.0...1.3.1) (2024-03-06)
+
+
+### Bug fixes
+
+* improve JS(X)/TS(X) syntax highlight ([#31](https://github.com/expo/vscode-expo-theme/issues/31)) ([c9252a1](https://github.com/expo/vscode-expo-theme/commit/c9252a1d468dcc3880d045cbdd2e6524794f5181))
+
+
+### Other chores
+
+* bump dependencies, switch to Node 20 ([#32](https://github.com/expo/vscode-expo-theme/issues/32)) ([5ed6437](https://github.com/expo/vscode-expo-theme/commit/5ed64378bc791a6b275138fd034c07000bb95dc4))
+* **ci:** rotate and update repository secrets ([#30](https://github.com/expo/vscode-expo-theme/issues/30)) ([c925c2a](https://github.com/expo/vscode-expo-theme/commit/c925c2afb6509a1a21d13f1f23bc0870130889ed))
+
 ## [1.3.0](https://github.com/expo/vscode-expo-theme/compare/1.2.0...1.3.0) (2023-11-07)
 
 
