@@ -5,13 +5,14 @@ tsconfig.*tsbuildinfo
 
 # dependencies
 node_modules
-npm-debug.log*
 lerna-debug.log*
-yarn-debug.log*
-yarn-error.log*
-yarn.lock
-package-lock.json
-!/yarn.lock
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # test fixtures
 !/test/fixture/yarn.lock
