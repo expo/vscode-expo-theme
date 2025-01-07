@@ -4,7 +4,7 @@ description: Prepare the project for any CI action
 inputs:
   node-version:
     description: Version of Node to install
-    default: 20
+    default: 22
 
 runs:
   using: composite
@@ -16,5 +16,5 @@ runs:
         cache: yarn
 
     - name: 📦 Install dependencies
-      run: yarn install --frozen-lockfile
+      run: yarn install --immutable
       shell: bash

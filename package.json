@@ -32,24 +32,25 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20",
-    "@types/vscode": "^1.86.0",
-    "@vscode/extension-telemetry": "^0.9.2",
-    "@vscode/vsce": "^2.23.0",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.2",
+    "@types/vscode": "^1.96.0",
+    "@vscode/extension-telemetry": "^0.9.8",
+    "@vscode/vsce": "^2.32.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-config-universe": "^12.0.0",
-    "nodemon": "^3.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-universe": "^14.0.0",
+    "nodemon": "^3.1.9",
     "ovsx": "^0.8.3",
-    "prettier": "^3.2.5",
+    "prettier": "^3.4.2",
     "semantic-release": "^23.0.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.7.2"
   },
   "resolutions": {
-    "@typescript-eslint/typescript-estree": "^7.0.2"
+    "@typescript-eslint/typescript-estree": "^8.18.2"
   },
+  "packageManager": "yarn@4.6.0",
   "eslintConfig": {
     "extends": "universe/node",
     "env": {
