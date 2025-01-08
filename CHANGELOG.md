@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/expo/vscode-expo-theme/compare/1.3.1...1.4.0) (2025-01-08)
+
+
+### New features
+
+* upgrade styleguide, adjustments for updated palette ([#35](https://github.com/expo/vscode-expo-theme/issues/35)) ([4451ebc](https://github.com/expo/vscode-expo-theme/commit/4451ebcc974a87f0ae57c7d9cb9add1671109a0a))
+
+
+### Other chores
+
+* update Yarn, switch to Node 22, bump dependencies ([#33](https://github.com/expo/vscode-expo-theme/issues/33)) ([45fa245](https://github.com/expo/vscode-expo-theme/commit/45fa245fddede323ec039ba23ea852e64263a34c))
+
 ## [1.3.1](https://github.com/expo/vscode-expo-theme/compare/1.3.0...1.3.1) (2024-03-06)
 
 
