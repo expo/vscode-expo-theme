@@ -226,14 +226,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/styleguide-base@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@expo/styleguide-base@npm:1.0.1"
+"@expo/styleguide-base@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@expo/styleguide-base@npm:2.0.1"
   dependencies:
-    "@radix-ui/colors": "npm:^0.1.8"
+    "@radix-ui/colors": "npm:^3.0.0"
   peerDependencies:
     react: ">= 16"
-  checksum: 10c0/476d294ff796ca50d87f86014af3b3a38bc73e3085eb1566ddbcc84f6b8c9f08d355af8988501560af1063a1f19f8533d6a7d3043eabb33009cbe524b83484ed
+  checksum: 10c0/86d26f064595acee5f9a685029633c7aa6f9843a41b7bd1da22c76454dd250bc4f5d3b2f98407baaac3cd704cafb174d94d949dec1098ceb144d792c78b06815
   languageName: node
   linkType: hard
 
@@ -849,10 +849,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/colors@npm:^0.1.8":
-  version: 0.1.9
-  resolution: "@radix-ui/colors@npm:0.1.9"
-  checksum: 10c0/d123255325e4c953c1b001209478942dc9179e9e0a6698e8e98e5c131fecdcbbce585a3680d84865784da2d523d1d3c5778a86961a09d7811dd8b2391c47040a
+"@radix-ui/colors@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@radix-ui/colors@npm:3.0.0"
+  checksum: 10c0/612c6bb4efe987f2d49aaca2f785687d08150da59a248328bc2b4e187ece4ef731c1dc5c6a9430fffcac4af9e65cf2f89ceb9806f8809940c9eb238b79d2cf2f
   languageName: node
   linkType: hard
 
@@ -8450,7 +8450,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vscode-expo-theme@workspace:."
   dependencies:
-    "@expo/styleguide-base": "npm:^1.0.1"
+    "@expo/styleguide-base": "npm:^2.0.1"
     "@semantic-release/changelog": "npm:^6.0.3"
     "@semantic-release/git": "npm:^10.0.1"
     "@tsconfig/node22": "npm:^22.0.0"
