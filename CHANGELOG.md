@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/expo/vscode-expo-theme/compare/1.4.0...1.4.1) (2025-01-09)
+
+
+### Other chores
+
+* add `list` command plugin for yarn to fix `vsce` issue ([#36](https://github.com/expo/vscode-expo-theme/issues/36)) ([aa89ad4](https://github.com/expo/vscode-expo-theme/commit/aa89ad49b13ca31a37be733f4d46d5a7956733d7))
+
 ## [1.4.0](https://github.com/expo/vscode-expo-theme/compare/1.3.1...1.4.0) (2025-01-08)
 
 
