@@ -298,11 +298,14 @@ export default makeTheme({
       'keyword.declaration': palette.light.pink10,
       punctuation: lightTheme.text.tertiary,
       'other.source': lightTheme.text.tertiary,
-      'string.interpolated': '#C07F00',
-      'string.quoted': '#C07F00',
-      'string.template': '#C07F00',
+      'string.interpolated': palette.light.yellow11,
+      'string.quoted': palette.light.yellow11,
+      'string.template': palette.light.yellow11,
       'support.class.dart': palette.light.orange9,
-      'variable.parameter': palette.light.red10,
+      'variable.parameter': palette.light.orange9,
+      'storage.modifier': palette.light.pink10,
+      'storage.type.annotation': palette.light.red10,
+      'meta.embedded.expression': palette.light.orange9,
     },
 
     'source.cs': {
@@ -310,6 +313,7 @@ export default makeTheme({
       'keyword.type.void': palette.light.pink10,
       'entity.name.function': palette.light.blue10,
       'variable.other.object.property': palette.light.purple11,
+      punctuation: lightTheme.text.tertiary,
     },
 
     'source.diff': {
@@ -336,6 +340,26 @@ export default makeTheme({
       'punctuation.definition.inserted.diff': palette.light.green8,
       'punctuation.definition.deleted.diff': palette.light.red8,
       'punctuation.definition.range.diff': palette.light.purple8,
+    },
+
+    'source.rust': {
+      'entity.name.function': palette.light.blue10,
+      'keyword.control.flow': palette.light.pink10,
+      'entity.name.namespace': palette.light.orange9,
+      'meta.attribute.rust': palette.light.red10,
+      punctuation: lightTheme.text.tertiary,
+    },
+
+    'source.zig': {
+      'entity.name.function': palette.light.blue10,
+      'keyword.control.flow': palette.light.pink10,
+      'keyword.default': palette.light.pink10,
+      'keyword.structure': palette.light.pink10,
+      'keyword.storage': palette.light.purple11,
+      'keyword.type': palette.light.purple11,
+      'keyword.type.c': palette.light.green10,
+      'support.function.builtin.zig': palette.light.orange9,
+      punctuation: lightTheme.text.tertiary,
     },
   },
 });

@@ -297,7 +297,10 @@ export default makeTheme({
       'string.quoted': palette.dark.yellow11,
       'string.template': palette.dark.yellow11,
       'support.class': palette.dark.orange9,
-      'variable.parameter': palette.dark.red9,
+      'variable.parameter': palette.dark.orange9,
+      'storage.modifier': palette.dark.pink10,
+      'storage.type.annotation': palette.dark.red9,
+      'meta.embedded.expression': palette.dark.orange9,
     },
 
     'source.cs': {
@@ -305,6 +308,7 @@ export default makeTheme({
       'keyword.type.void': palette.dark.pink10,
       'entity.name.function': palette.dark.blue10,
       'variable.other.object.property': palette.dark.purple10,
+      punctuation: darkTheme.text.tertiary,
     },
 
     'source.diff': {
@@ -331,6 +335,26 @@ export default makeTheme({
       'punctuation.definition.inserted.diff': palette.dark.green7,
       'punctuation.definition.deleted.diff': palette.dark.red7,
       'punctuation.definition.range.diff': palette.dark.purple8,
+    },
+
+    'source.rust': {
+      'entity.name.function': palette.dark.blue10,
+      'keyword.control.flow': palette.dark.pink10,
+      'entity.name.namespace': palette.dark.orange10,
+      'meta.attribute.rust': palette.dark.red9,
+      punctuation: darkTheme.text.tertiary,
+    },
+
+    'source.zig': {
+      'entity.name.function': palette.dark.blue10,
+      'keyword.control.flow': palette.dark.pink10,
+      'keyword.default': palette.dark.pink10,
+      'keyword.structure': palette.dark.pink10,
+      'keyword.storage': palette.dark.purple10,
+      'keyword.type': palette.dark.purple10,
+      'keyword.type.c': palette.dark.green11,
+      'support.function.builtin.zig': palette.dark.orange10,
+      punctuation: darkTheme.text.tertiary,
     },
   },
 });
