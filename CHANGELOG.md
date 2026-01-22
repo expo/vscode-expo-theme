@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/expo/vscode-expo-theme/compare/1.4.1...1.4.2) (2026-01-22)
+
+
+### Bug fixes
+
+* improve Rust and Zig syntax highlight ([#37](https://github.com/expo/vscode-expo-theme/issues/37)) ([67dd089](https://github.com/expo/vscode-expo-theme/commit/67dd089830ae97bd30c9c6cec47ba8c3f027694b))
+
 ## [1.4.1](https://github.com/expo/vscode-expo-theme/compare/1.4.0...1.4.1) (2025-01-09)
 
 
